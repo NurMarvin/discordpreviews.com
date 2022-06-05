@@ -1,0 +1,122 @@
+/**
+ * Copyright (c) 2022 NurMarvin (Marvin Witt)
+ * Licensed under the Open Software License version 3.0
+ */
+@font-face {
+  font-family: "Ginto Nord";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/ABCGintoNord-Bold.woff2") format("woff2"),
+    url("/fonts/ABCGintoNord-Bold.woff") format("woff"),
+    url("/fonts/ABCGintoNord-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Ginto Nord";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/ABCGintoNord-Black.woff2") format("woff2"),
+    url("/fonts/ABCGintoNord-Black.woff") format("woff"),
+    url("/fonts/ABCGintoNord-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Ginto Nord";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/ABCGintoNord-Ultra.woff2") format("woff2"),
+    url("/fonts/ABCGintoNord-Ultra.woff") format("woff"),
+    url("/fonts/ABCGintoNord-Ultra.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Whitney";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/Whitney-Book.woff2") format("woff2"),
+    url("/fonts/Whitney-Book.woff") format("woff"),
+    url("/fonts/Whitney-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Whitney";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/Whitney-Book-Italic.woff2") format("woff2"),
+    url("/fonts/Whitney-Book-Italic.woff") format("woff"),
+    url("/fonts/Whitney-Book-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Whitney";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/Whitney-Medium.woff2") format("woff2"),
+    url("/fonts/Whitney-Medium.woff") format("woff"),
+    url("/fonts/Whitney-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Whitney";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/Whitney-Semibold.woff2") format("woff2"),
+    url("/fonts/Whitney-Semibold.woff") format("woff"),
+    url("/fonts/Whitney-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Whitney";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/Whitney-Bold.woff2") format("woff2"),
+    url("/fonts/Whitney-Bold.woff") format("woff"),
+    url("/fonts/Whitney-Bold.otf") format("opentype");
+}
+
+:root {
+  --font-primary: "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-headline: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  --font-monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #36393f;
+  color: #dcddde;
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+fieldset,
+blockquote {
+  border: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,31 @@
+/**
+ * Copyright (c) 2022 NurMarvin (Marvin Witt)
+ * Licensed under the Open Software License version 3.0
+ */
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.header h2 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.header .cta {
+  font-size: 1rem;
+}
+
+.header .cta img {
+  display: none;
+}
+
+.articles .article-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.articles .article-list .article img {
+  max-height: auto;
+}

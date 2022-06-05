@@ -1,0 +1,38 @@
+{
+  "plugins": ["simple-import-sort", "header"],
+  "extends": ["@remix-run/eslint-config", "@remix-run/eslint-config/node"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "header/header": [2, "HEADER.txt"]
+  },
+  "overrides": [
+    // override "simple-import-sort" config
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              // Packages `react` related packages come first.
+              ["^react", "^@?\\w"],
+              // Components
+              ["^~/components"],
+              // Other internal packages
+              ["^~/"],
+              // Side effect imports.
+              ["^\\u0000"],
+              // Parent imports. Put `..` last.
+              ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+              // Other relative imports. Put same-folder imports and `.` last.
+              ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+              // Style imports.
+              ["^.+\\.?(css)$"]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

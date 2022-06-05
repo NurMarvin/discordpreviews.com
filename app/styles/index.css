@@ -1,0 +1,105 @@
+/**
+ * Copyright (c) 2022 NurMarvin (Marvin Witt)
+ * Licensed under the Open Software License version 3.0
+ */
+.header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1,
+.articles h1 {
+  font-family: var(--font-headline);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header h2 {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  color: #b9bbbe;
+}
+
+.header .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: max-content;
+
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+  background-color: #5865f2;
+  color: #fff;
+  text-decoration: none;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.17s ease, color 0.17s ease;
+}
+
+.header .cta:hover {
+  background-color: #4752c4;
+}
+
+.header .cta img {
+  width: 1.5rem;
+}
+
+.articles .article-list {
+  /* Grid view, 3 articles per row, grow to fill available space */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.articles .article-list .article {
+  background-color: #2f3136;
+  color: #b9bbbe;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16);
+  text-decoration: none;
+  transition: background-color 0.125s, box-shadow 0.125s, color 0.125s;
+}
+
+.articles .article-list .article:hover {
+  background-color: #292b2f;
+  color: #dcddde;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
+}
+
+.articles .article-list .article img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.articles .article-list .article .article-content {
+  padding: 1rem;
+}
+
+.articles .article-list .article .article-content p {
+  height: 58px;
+  overflow: hidden;
+}
+
+.articles .article-list .article .article-content hr {
+  border: none;
+  border-top: thin solid rgba(79, 84, 92, 0.48);
+}

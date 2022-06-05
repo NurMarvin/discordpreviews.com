@@ -1,0 +1,9 @@
+/**
+ * Copyright (c) 2022 NurMarvin (Marvin Witt)
+ * Licensed under the Open Software License version 3.0
+ */
+.timestamp {
+  background-color: rgba(79, 84, 92, 0.48);
+  border-radius: 3px;
+  padding: 0 2px;
+}

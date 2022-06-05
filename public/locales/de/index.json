@@ -1,0 +1,7 @@
+{
+  "title": "Discord Previews",
+  "subtitle": "Deine #1 Quelle für die neuesten Discord News, Features, Experimente und Updates.",
+  "cta": "Komm und schließe dich über {{memberCount}} Mitgliedern an",
+  "articles": "Neuste News",
+  "publishedAt": "Veröffentlicht am <3>{{formattedDate}}</3>"
+}

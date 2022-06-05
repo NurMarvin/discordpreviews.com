@@ -1,0 +1,35 @@
+/**
+ * Copyright (c) 2022 NurMarvin (Marvin Witt)
+ * Licensed under the Open Software License version 3.0
+ */
+.code {
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #2f3136;
+  border: 1px solid #202225;
+}
+
+.code code {
+  font-family: var(--font-monospace);
+}
+
+.code code.language-diff {
+  display: block;
+}
+
+.code .language-diff .inserted-sign {
+  background-color: rgba(22, 163, 74, 0.1);
+}
+
+.code .language-diff .deleted-sign {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.code .language-diff .inserted-sign,
+.code .language-diff .deleted-sign {
+  display: block;
+  padding: 16px;
+  width: 100%;
+  overflow-x: auto;
+}

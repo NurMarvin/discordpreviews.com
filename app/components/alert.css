@@ -1,0 +1,41 @@
+/**
+ * Copyright (c) 2022 NurMarvin (Marvin Witt)
+ * Licensed under the Open Software License version 3.0
+ */
+.alert-box {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.alert-box span {
+  color: hsla(0, 0%, 100%, 0.9);
+  margin: 0;
+}
+
+.alert-box strong {
+  font-weight: 900;
+}
+
+.alert-box.danger {
+  background: rgba(237, 66, 69, 0.1);
+  border: 2px solid rgba(237, 66, 69, 0.5);
+}
+
+.alert-box.warn {
+  background: rgba(254, 231, 92, 0.1);
+  border: 2px solid rgba(254, 231, 92, 0.5);
+}
+
+.alert-box.success {
+  background: rgba(59, 165, 93, 0.1);
+  border: 2px solid rgba(59, 165, 93, 0.5);
+}
+
+.alert-box.info {
+  background: rgba(88, 101, 242, 0.1);
+  border: 2px solid rgba(88, 101, 242, 0.5);
+}

@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  db:
+    image: postgres:alpine
+    restart: unless-stopped
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    network_mode: host
+
+volumes:
+  postgres_data:
