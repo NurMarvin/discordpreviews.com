@@ -119,11 +119,12 @@ const Index = () => {
 
             return (
               <Link
-                role="article"
+                role="listitem"
                 to={article.slug}
                 key={article.slug}
                 className="article"
-               >
+                prefetch="intent"
+              >
                 <img src={cover} alt={article.frontmatter.title} />
                 <div className="article-content">
                   <h3>{article.frontmatter.title}</h3>
