@@ -1,5 +1,7 @@
 # discordpreviews.com
 
+![Discord](https://img.shields.io/discord/603970300668805120?style=for-the-badge)
+
 The source code for the [Discord Previews](https://discordpreviews.com) website.
 
 ## Setup
